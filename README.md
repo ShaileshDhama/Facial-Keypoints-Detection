@@ -1,34 +1,51 @@
-# Facial-Keypoints-Detection
+# Facial keypoints Detection
 
-**Primary Objective:-** Detect the location of keypoints on face images
+**Author**: SHAILESH DHAMA
 
-The objective of this project is to predict keypoint positions on face images. This can be used as a building block in several applications, such as:
+### Business problem:
 
-1.Tracking faces in images and video
+    - To detect the location of keypoints on face images
 
-2.Analysing facial expressions
+    The objective of this project is to predict keypoint positions on face images. This can be used as a building block in several applications, such as:
 
-3.Detecting dysmorphic facial signs for medical diagnosis
+      1.Tracking faces in images and video
+      2.Analysing facial expressions
+      3.Detecting dysmorphic facial signs for medical diagnosis
+      4.Biometrics / face recognition
+      5.Detecing facial keypoints is a very challenging problem.
 
-4.Biometrics / face recognition
+### Data
+Data can include source and high-level description (e.g. # obs)
 
-5.Detecing facial keypoints is a very challenging problem.  
-Facial features vary greatly from one individual to another, and even for a single individual, there is a large amount of variation due to 3D pose, size, position, viewing angle, and illumination conditions. 
-Computer vision research has come a long way in addressing these difficulties, but there remain many opportunities for improvement.
+## STEPS :
 
+- Data Preprocessing and cleaning
+- Fully connected sequential model.
+- Training with fully connected sequential model.
+- Convolutional Neural Network
+- Training with Convolutional Neural Network.
+- CNN after employing flipped Image Data Generator.
+- Training with CNN(flippedImage)
 
-CNN as a deep learning algorithm was designed for such problems.
-but the main difference in using it or other classifiers are in those areas:
+## Results
 
-**1.Data Dependencies**
-(The most important difference between deep learning and traditional machine learning is its performance as the scale of data increases. 
-When the data is small, deep learning algorithms don’t perform that well. This is because deep learning algorithms need a large amount of data to understand it perfectly)
+#### Visual 1
+![graph1](./images/visual1.png)
+> Sentence about visualization.
 
-**2.Hardware Dependency** (Deep learning algorithms heavily depend on high-end machines)
+#### Visual 2
+![graph2](./images/visual2.png)
+> Sentence about visualization.
 
-**3.Problem Solving Approach** (Deep learning in contrast advocates to solve the problem end-to-end)
+### For further information
+Please review the narrative of our analysis in [our jupyter notebook](./facial-keypoints-detection.ipynb)
 
-**4.Feature Engineering** (Deep learning algorithms try to learn high-level features from data)
+For any additional questions, please contact **shaileshshettyd@gmail.com)
 
-**5.Execution time** (deep learning algorithm takes a long time to train)
+##### Repository Structure:
 
+```
+├── README.md                           <- The top-level README for reviewers of this project.
+├── facial-keypoints-detection.ipynb    <- narrative documentation of analysis in jupyter notebook
+└── images                              <- both sourced externally and generated from code
+```
