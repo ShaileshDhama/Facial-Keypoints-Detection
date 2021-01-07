@@ -29,13 +29,13 @@ Data can include source and high-level description (e.g. # obs)
 
 ## Results
 
-#### Visual 1
-![graph1](./images/visual1.png)
-> Sentence about visualization.
+#### CNN model output
+![CNN model output](./KEYPOINTS_0.png)
+> CNN model output
 
-#### Visual 2
-![graph2](./images/visual2.png)
-> Sentence about visualization.
+#### Sequential model output
+![Sequential model output](./KEYPOINTS_1.png)
+> Sequential model output
 
 ### For further information
 Please review the narrative of our analysis in [our jupyter notebook](./facial-keypoints-detection.ipynb)
