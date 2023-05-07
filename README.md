@@ -1,6 +1,6 @@
 # Facial Keypoints Detection
 
-**Author: SHAILESH DHAMA
+**Author** : SHAILESH DHAMA
 
 ### Business problem:
 To detect the location of keypoints on face images.
