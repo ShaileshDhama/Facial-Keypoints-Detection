@@ -31,11 +31,11 @@ The dataset used in this project is not specified in the readme.md file.
 The output of the CNN model and the Sequential model are shown in the images below.
 
 #### CNN model output
-![CNN model output](./images/KEYPOINTS_0.png)
+![CNN model output](./KEYPOINTS_0.png)
 > CNN model output
 
 #### Sequential model output
-![Sequential model output](./images/KEYPOINTS_1.png)
+![Sequential model output](./KEYPOINTS_1.png)
 > Sequential model output
 
 ## For Further Information
