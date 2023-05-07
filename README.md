@@ -1,42 +1,65 @@
 # Facial Keypoints Detection
 
 Author: SHAILESH DHAMA
+Certainly, here are the detailed steps of the facial keypoints detection project along with statistical formulas in LaTeX style:
 
-## Business Problem
+### Business problem:
+To detect the location of keypoints on face images.
 
-The objective of this project is to predict the location of keypoints on face images. This task is important for applications such as facial tracking, facial expression analysis, biometrics/face recognition, and medical diagnosis. Detecting facial keypoints is a challenging problem that requires a robust and accurate model.
+The objective of this project is to predict keypoint positions on face images. This can be used as a building block in several applications, such as:
 
-## Data
+1. Tracking faces in images and video
+2. Analyzing facial expressions
+3. Detecting dysmorphic facial signs for medical diagnosis
+4. Biometrics / face recognition
 
-The dataset used in this project is not specified in the readme.md file.
+### Data
+The data can include the source and high-level description (e.g. # obs).
 
-## Steps
+### Steps:
 
-1. Data Preprocessing and Cleaning: This step involves cleaning and preprocessing the dataset by removing any missing or incorrect data.
+#### Step 1: Data Preprocessing and Cleaning
+- Import data and remove missing values.
+- Reshape the pixel values to 96x96 size and scale the values to [0, 1].
+- Fill missing keypoint values using interpolation.
 
-2. Fully Connected Sequential Model: A fully connected sequential model is created to predict the location of facial keypoints.
+#### Step 2: Fully Connected Sequential Model
+- Build a fully connected sequential model using Keras.
+- Compile the model with appropriate loss function and optimizer.
+- Fit the model on training data with appropriate batch size and number of epochs.
 
-3. Training with Fully Connected Sequential Model: The fully connected sequential model is trained using the preprocessed dataset.
+#### Step 3: Training with Fully Connected Sequential Model
+- Train the fully connected sequential model with the training data.
+- Evaluate the model on the test data using root mean squared error (RMSE) metric.
 
-4. Convolutional Neural Network: A Convolutional Neural Network (CNN) is created to predict the location of facial keypoints.
+#### Step 4: Convolutional Neural Network
+- Build a convolutional neural network (CNN) using Keras.
+- Compile the model with appropriate loss function and optimizer.
+- Fit the model on training data with appropriate batch size and number of epochs.
 
-5. Training with Convolutional Neural Network: The CNN is trained using the preprocessed dataset.
+#### Step 5: Training with Convolutional Neural Network
+- Train the CNN model with the training data.
+- Evaluate the model on the test data using RMSE metric.
 
-6. CNN after employing Flipped Image Data Generator: The CNN is modified by employing a Flipped Image Data Generator to augment the training data.
+#### Step 6: CNN after Employing Flipped Image Data Generator
+- Build a CNN model using Keras with data augmentation using flipped images.
+- Compile the model with appropriate loss function and optimizer.
+- Fit the model on training data with appropriate batch size and number of epochs.
 
-7. Training with CNN (Flipped Image): The CNN with flipped images is trained using the preprocessed dataset.
+#### Step 7: Training with CNN(FlippedImage)
+- Train the CNN model with flipped image data.
+- Evaluate the model on the test data using RMSE metric.
 
-## Results
+### Results:
+- The CNN model output is shown in (./KEYPOINTS_0.png) and the sequential model output is shown in (./KEYPOINTS_1.png).
+- The evaluation metrics used to assess model performance are the RMSE between the predicted and actual keypoint locations.
 
-The output of the CNN model and the Sequential model are shown in the images below.
+#### RMSE formula:
+The root mean squared error (RMSE) is calculated using the following formula:
 
-#### CNN model output
-![CNN model output](./KEYPOINTS_0.png)
-> CNN model output
+$RMSE = \sqrt{\frac{1}{N}\sum_{i=1}^{N}(y_{i} - \hat{y_{i}})^{2}}$
 
-#### Sequential model output
-![Sequential model output](./KEYPOINTS_1.png)
-> Sequential model output
+where $y_{i}$ is the actual value of the ith keypoint and $\hat{y_{i}}$ is the predicted value of the ith keypoint.
 
 ## For Further Information
 
