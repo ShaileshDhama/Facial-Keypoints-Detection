@@ -1,51 +1,53 @@
-# Facial keypoints Detection
+# Facial Keypoints Detection
 
-**Author**: SHAILESH DHAMA
+Author: SHAILESH DHAMA
 
-### Business problem:
+## Business Problem
 
-    - To detect the location of keypoints on face images
+The objective of this project is to predict the location of keypoints on face images. This task is important for applications such as facial tracking, facial expression analysis, biometrics/face recognition, and medical diagnosis. Detecting facial keypoints is a challenging problem that requires a robust and accurate model.
 
-    The objective of this project is to predict keypoint positions on face images. This can be used as a building block in several applications, such as:
+## Data
 
-      1.Tracking faces in images and video
-      2.Analysing facial expressions
-      3.Detecting dysmorphic facial signs for medical diagnosis
-      4.Biometrics / face recognition
-      5.Detecing facial keypoints is a very challenging problem.
+The dataset used in this project is not specified in the readme.md file.
 
-### Data
-Data can include source and high-level description (e.g. # obs)
+## Steps
 
-## STEPS :
+1. Data Preprocessing and Cleaning: This step involves cleaning and preprocessing the dataset by removing any missing or incorrect data.
 
-- Data Preprocessing and cleaning
-- Fully connected sequential model.
-- Training with fully connected sequential model.
-- Convolutional Neural Network
-- Training with Convolutional Neural Network.
-- CNN after employing flipped Image Data Generator.
-- Training with CNN(flippedImage)
+2. Fully Connected Sequential Model: A fully connected sequential model is created to predict the location of facial keypoints.
+
+3. Training with Fully Connected Sequential Model: The fully connected sequential model is trained using the preprocessed dataset.
+
+4. Convolutional Neural Network: A Convolutional Neural Network (CNN) is created to predict the location of facial keypoints.
+
+5. Training with Convolutional Neural Network: The CNN is trained using the preprocessed dataset.
+
+6. CNN after employing Flipped Image Data Generator: The CNN is modified by employing a Flipped Image Data Generator to augment the training data.
+
+7. Training with CNN (Flipped Image): The CNN with flipped images is trained using the preprocessed dataset.
 
 ## Results
 
+The output of the CNN model and the Sequential model are shown in the images below.
+
 #### CNN model output
-![CNN model output](./KEYPOINTS_0.png)
+![CNN model output](./images/KEYPOINTS_0.png)
 > CNN model output
 
 #### Sequential model output
-![Sequential model output](./KEYPOINTS_1.png)
+![Sequential model output](./images/KEYPOINTS_1.png)
 > Sequential model output
 
-### For further information
-Please review the narrative of our analysis in [our jupyter notebook](./facial-keypoints-detection.ipynb)
+## For Further Information
 
-For any additional questions, please contact **shaileshshettyd@gmail.com)
+Please review the narrative of our analysis in [our Jupyter Notebook](./facial-keypoints-detection.ipynb).
 
-##### Repository Structure:
+For any additional questions, please contact **shaileshshettyd@gmail.com**
+
+## Repository Structure
 
 ```
 ├── README.md                           <- The top-level README for reviewers of this project.
-├── facial-keypoints-detection.ipynb    <- narrative documentation of analysis in jupyter notebook
-└── images                              <- both sourced externally and generated from code
+├── facial-keypoints-detection.ipynb    <- Narrative documentation of analysis in Jupyter notebook.
+└── images                              <- Both sourced externally and generated from code.
 ```
