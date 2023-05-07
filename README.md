@@ -1,7 +1,6 @@
 # Facial Keypoints Detection
 
-Author: SHAILESH DHAMA
-Certainly, here are the detailed steps of the facial keypoints detection project along with statistical formulas in LaTeX style:
+**Author: SHAILESH DHAMA
 
 ### Business problem:
 To detect the location of keypoints on face images.
