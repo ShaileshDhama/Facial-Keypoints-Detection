@@ -62,7 +62,7 @@ The RMSE is computed using the formula:
 
 $RMSE = \sqrt{\frac{1}{N}\sum_{i=1}^{N}(y_{i} - \hat{y_{i}})^{2}}$
 
-where \(y_{i}\) is the actual value of the ith keypoint and \(\hat{y_{i}}\) is the predicted value of the ith keypoint.
+where $\(y_{i}\)$ is the actual value of the $i_th$ keypoint and $\(\hat{y_{i}}\)$ is the predicted value of the $i_th$ keypoint.
 
 ## Additional Information <a name="additional-information"></a>
 
