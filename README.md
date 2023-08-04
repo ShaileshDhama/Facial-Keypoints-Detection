@@ -59,9 +59,8 @@ The output of the CNN model is available in the image `KEYPOINTS_0.png`, and the
 
 The RMSE is computed using the formula:
 
-\[
-RMSE = \sqrt{\frac{1}{N}\sum_{i=1}^{N}(y_{i} - \hat{y_{i}})^{2}}
-\]
+
+$RMSE = \sqrt{\frac{1}{N}\sum_{i=1}^{N}(y_{i} - \hat{y_{i}})^{2}}$
 
 where \(y_{i}\) is the actual value of the ith keypoint and \(\hat{y_{i}}\) is the predicted value of the ith keypoint.
 
